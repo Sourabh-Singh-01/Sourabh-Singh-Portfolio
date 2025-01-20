@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sourabh Singh - Portfolio</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap'>
+  <!-- <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
+  <link href="main.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="greensock.css"> -->
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <div class="section">
+      <div class="container-medium">
+        <div class="padding-vertical">
+          <div class="max-width-large">
+            <div class="navbar">
+              <a href="#" class="logo">
+                <div class="logo">
+                  <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+                    <defs>
+                      <linearGradient id="purpleGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6B2FBE" />
+                        <stop offset="100%" style="stop-color:#3B1B6B" />
+                      </linearGradient>
+                      <filter id="glow2">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                        <feMerge>
+                          <feMergeNode in="coloredBlur" />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                    </defs>
+
+                    <!-- Deep shadow -->
+                    <path class="deep-shadow-path2"
+                      d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+                      stroke="rgba(107,47,190,0.1)" stroke-width="19" fill="none" />
+
+                    <!-- Middle shadow -->
+                    <path class="middle-shadow-path2"
+                      d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+                      stroke="rgba(107,47,190,0.2)" stroke-width="15" fill="none" />
+
+                    <!-- Main S path -->
+                    <path class="main-path2"
+                      d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+                      stroke="url(#purpleGradient2)" stroke-width="10" fill="none" filter="url(#glow)" />
+
+                    <!-- Shine effect -->
+                    <path class="shine-path"
+                      d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+                      stroke="#AB82FF" stroke-width="3" fill="none" />
+                  </svg>
+                </div>
+              </a>
+              <div class="icons">
+                <a href="#home">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> Home
+                </a>
+                <a href="#about">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> About Me
+                </a>
+                <a href="#projects">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> Projects
+                </a>
+                <a href="#contact">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span> Contact Me
+                </a>
+                <!-- <a href="#" class="#About Me"><p>About Me</p></a>
+                    <a href="#" class="#Projects"><p>Projects</p></a>
+                    <a href="#" class="#Contact Me"><p>Contact Me</p></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-section vertical-section section ">
+      <div class="wrapper">
+        <div role="list" class="list main">
+          <div role="listitem" class="item">
+            <div class="item_content float-circle">
+              <div class="hero" id="home">
+                <div class="hero-text">
+                  <div class="name">
+                    <h1>Hi, I am <span class="text-focus-in gradient-text">Sourabh</span></h1>
+                  </div>
+                  <div class="tag-line">
+                    <p>A <span class="tubelight">Full-Stack Web Developer</span> Who Brings Ideas to Life</p>
+                  </div>
+                  <!-- <div class="links">
+                          <div >
+                              <a class="github" href="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                              </a>
+                          </div>
+                          <div >    
+                              <a class="linkedin" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                              </a>
+                          </div>
+                          <div class="mail">
+                              <a href="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                              </a>
+                          </div>    
+                      </div> -->
+                  <!-- button -->
+                  <button>
+                    Get in Touch
+                    <div class="star-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="star-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="star-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="star-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="star-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="star-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Layer_x0020_1">
+                          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                          <path class="fil0"
+                            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                          </path>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
+                  <!-- _____________ -->
+                  <div class="floating-icon code-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <div class="floating-icon terminal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="4 17 10 11 4 5"></polyline>
+                      <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                  </div>
+                  <div class="scrolldown" style="--color: skyblue">
+                    <div class="chevrons">
+                      <div class="chevrondown"></div>
+                      <div class="chevrondown"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container_img container intital">
+                  <div class="profile">
+                    <img src="assets/profile.png" alt="Profile Picture">
+                  </div>
+                  <div class="orbit box">
+                    <!-- Add more images -->
+                    <div class="coding-image" style="--angle: 0;"><img src="assets/html.png" alt="HTML"></div>
+                    <div class="coding-image" style="--angle: 45;"><img src="assets/css.png" alt="CSS"></div>
+                    <div class="coding-image" style="--angle: 90;"><img src="assets/js.png" alt="JavaScript"></div>
+                    <div class="coding-image" style="--angle: 135;"><img src="assets/nodejs-inner.webp" alt="Python">
+                    </div>
+                    <div class="coding-image" style="--angle: 180;"><img src="assets/java.png" alt="Java"></div>
+                    <div class="coding-image" style="--angle: 225;"><img src="assets/sql.jpg" alt="PHP"></div>
+                    <div class="coding-image" style="--angle: 270;"><img src="assets/ruby.png" alt="Ruby"></div>
+                    <div class="coding-image" style="--angle: 315;"><img src="assets/reactjs.svg" alt="C#"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="listitem" class="item" >
+            <div class="item_content float-circle">
+              <div class="About" id="about" >
+                <h2 class="about-heading gradient-text"> About Me</h2>
+                <div class="img-content">
+                  <div class="img floating-icon"></div>
+
+                  <div class="about-content">
+                    <p>Hi, I’m Sourabh Singh—a full-stack developer who turns coffee into code and websites into magic.
+                      When I’m not debugging, I’m diving into Data Science, teaching machines to think (or at least
+                      try). Code, crunch, conquer—that’s my vibe! 🚀
+                  </div>
+                </div>
+                <div class="container_drop">
+                  <div class="drop">
+                    <div class="content">
+                      <i class="fa-solid fa-code Development" style="color:#6B2FBE"></i>
+                      <h2 class="dev-heading">Development</h2>
+                      <ul class="dev-list">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="js">JavaScript</li>
+                        <li class="react">React</li>
+                        <li class="node">Node.js</li>
+                        <li class="express">Express.js</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="drop">
+                    <div class="content">
+                      <i class="fa-solid fa-database Database" style="color:#6B2FBE"></i>
+                      <h2 class="data-heading">Database</h2>
+                      <ul>
+                        <li class="sql">SQL</li>
+                        <li class="mongo">MongoDB</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="listitem" class="item">
+            <div class="item_content float-circle">
+              <div class="projects" id="projects">
+                <div class="cat-container">
+                  <svg viewBox="0 0 400 400" width="200" height="200">
+                    <!-- Airplane Body (Purple Shade) -->
+                    <path d="M100 200 C100 180 150 160 200 160 C250 160 300 180 300 200 L280 240 L120 240 Z"
+                      fill="#9B59B6" stroke="#8E44AD" stroke-width="4" />
+
+                    <!-- Propeller (Purple Shade) -->
+                    <g class="propeller">
+                      <path d="M320 190 L340 180 L350 190 L330 200 Z" fill="#8E44AD" />
+                      <circle cx="330" cy="190" r="5" fill="#333" />
+                    </g>
+
+                    <!-- Wheels -->
+                    <circle cx="140" cy="250" r="15" fill="#333" />
+                    <circle cx="260" cy="250" r="15" fill="#333" />
+
+                    <!-- Cat Head -->
+                    <g class="cat-head">
+                      <circle cx="200" cy="160" r="60" fill="white" />
+                      <path d="M160 120 L140 80 L180 100 Z" fill="white" />
+                      <path d="M240 120 L260 80 L220 100 Z" fill="white" />
+                      <!-- Eyes -->
+                      <g class="eyes">
+                        <circle cx="180" cy="150" r="10" fill="black" />
+                        <circle cx="220" cy="150" r="10" fill="black" />
+                        <circle cx="183" cy="147" r="3" fill="white" />
+                        <circle cx="223" cy="147" r="3" fill="white" />
+                      </g>
+                      <!-- Smile -->
+                      <path d="M190 175 Q200 185 210 175" stroke="black" stroke-width="3" fill="none" />
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="pr-head">Projects</h1>
+                <div class="pr-parent">
+                  <div class="project1">
+                    <svg class="well-1" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+                      <g style="order: -1;">
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750"
+                          points="70,70 150,50 130,130 50,150"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="url(#gradiente)"
+                          points="100,70 150,100 100,130 50,100"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+                            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#8A2BE2"
+                          points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)"
+                          points="40,-40 80,-40 80,99 40,75"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke=""
+                          fill="#9370DB" points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke=""
+                          fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke=""
+                          fill="#E6E6FA" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke=""
+                          fill="#DDA0DD" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff"
+                          points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130">
+                        </polygon>
+                        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127"
+                          points="50,50 120.5,8 120.5,35 50,80"></polygon>
+                      </g>
+                    </svg>
+                    <div class="super-parent">
+                      <div class="parent">
+                        <div class="card">
+                          <div class="content-box box1">
+                            <span class="card-title" >Amazon Clone</span>
+                            <p class="card-content">
+                              Built an Amazon clone, a full-featured e-commerce platform enabling seamless product
+                              browsing.
+                            </p>
+                            <span class="see-more">
+                              <form action="https://github.com/Sourabh-Singh-01/Amazon-Clone">
+                              <button class="button b1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                                </svg>
+                                <p class="text">GitHub</p>
+                              </button>
+                            </form>
+                            <form action="https://amazon-clone-beige-omega.vercel.app/">
+                              <button class="button">
+                                <p class="text">Live</p>
+                              </button>
+                            </form>
+                          </span>
+                          </div>
+                          <!-- <div class="date-box "> -->
+                            <!-- <video src="assets/Amazon.mkv"></video> -->
+                          <!-- </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="well-1" height="200" width="200">
+                      <g style="order: -1;">
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750"
+                          points="70,70 150,50 130,130 50,150"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="url(#gradiente)"
+                          points="100,70 150,100 100,130 50,100"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+                            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#8A2BE2"
+                          points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)"
+                          points="40,-40 80,-40 80,99 40,75"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke=""
+                          fill="#9370DB" points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke=""
+                          fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke=""
+                          fill="#E6E6FA" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke=""
+                          fill="#DDA0DD" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff"
+                          points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130">
+                        </polygon>
+                        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127"
+                          points="50,50 120.5,8 120.5,35 50,80"></polygon>
+                      </g>
+                    </svg>
+                    <div class="super-parent">
+                      <div class="parent">
+                        <div class="card">
+                          <div class="content-box box2">
+                            <span class="card-title">Ig Login Clone</span>
+                            <p class="card-content">
+                              Developed an Instagram login page clone with a responsive design, mimicking the authentic layout.
+                            </p>
+                            <span class="see-more">
+                              <form action="https://github.com/Sourabh-Singh-01/Insagram-Login-Page-clone">
+                              <button class="button b1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                                </svg>
+                                <p class="text">GitHub</p>
+                              </button>
+                            </form>
+                            <form action="https://insagram-login-page-clone.vercel.app/">
+                              <button class="button">
+                                <p class="text">Live</p>
+                              </button>
+                            </form>
+                          </span>
+                          </div>
+                          <!-- <div class="date-box">
+                            <span class="month">JUNE</span>
+                            <span class="date">29</span>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project1">
+                    <svg class="well-1" class="well-1" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+                      <g style="order: -1;">
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#9370DB" fill="none"
+                          points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+                        <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750"
+                          points="70,70 150,50 130,130 50,150"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="url(#gradiente)"
+                          points="100,70 150,100 100,130 50,100"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+                            <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#8A2BE2"
+                          points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)"
+                          points="40,-40 80,-40 80,99 40,75"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke=""
+                          fill="#9370DB" points="80,50 80,75 80,99 40,75"></polygon>
+                        <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke=""
+                          fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+                        <defs>
+                          <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+                            <stop style="stop-color: #9370DB00;stop-opacity:1" offset="20%"></stop>
+                            <stop style="stop-color:#9370DB54;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                          </linearGradient>
+                        </defs>
+                        <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke=""
+                          fill="#E6E6FA" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke=""
+                          fill="#DDA0DD" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+                        <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff"
+                          points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+                        <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130">
+                        </polygon>
+                        <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127"
+                          points="50,50 120.5,8 120.5,35 50,80"></polygon>
+                      </g>
+                    </svg>
+                    <div class="super-parent">
+                      <div class="parent">
+                        <div class="card">
+                          <div class="content-box box3">
+                            <span class="card-title">Email Validator</span>
+                            <p class="card-content">
+                              Created an email validation tool using an API to ensure accurate and reliable email input for seamless data collection.
+                            </p>
+                            <span class="see-more">
+                              <form action="https://github.com/Sourabh-Singh-01/Email-Validator">
+                              <button class="button b1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                                </svg>
+                                <p class="text">GitHub</p>
+                              </button>
+                            </form>
+                            <form action="https://email-validator-ebon.vercel.app/">
+                              <button class="button">
+                                <p class="text">Live</p>
+                              </button>
+                            </form>
+                          </span>
+                          </div>
+                          <!-- <div class="date-box">
+                            <span class="month">JUNE</span>
+                            <span class="date">29</span>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </hello>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div role="listitem" class="item">
+            <div class="item_content float-circle">   
+              <div class="contactme" id="contact">
+                <div class="social-links">
+                  <a href="https://www.instagram.com/_sourabh_singh_18/" class="social-link">
+                      <svg viewBox="0 0 24 24">
+                          <path
+                              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                      </svg>
+                      <span>Instagram</span>
+                  </a>
+                  <a href="https://x.com/_Sourabh_Singh1" class="social-link">
+                      <svg viewBox="0 0 24 24">
+                          <path
+                              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                      </svg>
+                      <span>Twitter</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/sourabhsingh1" class="social-link">
+                      <svg viewBox="0 0 24 24">
+                          <path
+                              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                      <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/Sourabh-Singh-01" class="social-link">
+                      <svg viewBox="0 0 24 24">
+                          <path
+                              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                      </svg>
+                      <span>GitHub</span>
+                  </a>
+              </div>
+              <div class="wrapper-social">
+                  <div class="image-section">
+                      <div class="image-content">
+                          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="floating">
+                              <!-- Background circle -->
+                              <circle cx="200" cy="200" r="180" fill="rgba(177, 60, 254, 0.05)" />
+          
+                              <!-- Main envelope body -->
+                              <path d="M100 140 L300 140 L300 280 L100 280 Z" fill="rgba(177, 60, 254, 0.1)" stroke="#b13cfe"
+                                  stroke-width="2" />
+          
+                              <!-- Envelope flap -->
+                              <path d="M100 140 L200 200 L300 140" fill="none" stroke="#b13cfe" stroke-width="2">
+                                  <animate attributeName="d" dur="4s" repeatCount="indefinite" values="M100 140 L200 200 L300 140;
+                                                  M100 140 L200 180 L300 140;
+                                                  M100 140 L200 200 L300 140" keyTimes="0; 0.5; 1" />
+                              </path>
+          
+                              <!-- Decorative lines -->
+                              <g stroke="#d491ff" stroke-width="2" opacity="0.6">
+                                  <line x1="150" y1="200" x2="250" y2="200">
+                                      <animate attributeName="x2" dur="2s" repeatCount="indefinite" values="250;230;250"
+                                          keyTimes="0;0.5;1" />
+                                  </line>
+                                  <line x1="150" y1="220" x2="230" y2="220">
+                                      <animate attributeName="x2" dur="2s" repeatCount="indefinite" values="230;210;230"
+                                          keyTimes="0;0.5;1" />
+                                  </line>
+                              </g>
+          
+                              <!-- Decorative circles -->
+                              <g fill="#b13cfe" opacity="0.8">
+                                  <circle cx="150" cy="160" r="4">
+                                      <animate attributeName="r" dur="2s" repeatCount="indefinite" values="4;6;4"
+                                          keyTimes="0;0.5;1" />
+                                  </circle>
+                                  <circle cx="250" cy="160" r="4">
+                                      <animate attributeName="r" dur="2s" repeatCount="indefinite" values="4;6;4"
+                                          keyTimes="0;0.5;1" begin="0.5s" />
+                                  </circle>
+                              </g>
+          
+                              <!-- Message floating elements -->
+                              <g class="floating-elements">
+                                  <!-- Heart -->
+                                  <path
+                                      d="M320 180 C320 170 310 160 300 160 C290 160 280 170 280 180 C280 200 300 210 300 210 C300 210 320 200 320 180"
+                                      fill="#b13cfe" opacity="0.6">
+                                      <animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0.6;0.3;0.6" />
+                                  </path>
+          
+                                  <!-- Star -->
+                                  <path d="M100 180 L105 170 L110 180 L120 185 L110 190 L105 200 L100 190 L90 185 L100 180"
+                                      fill="#d491ff" opacity="0.6">
+                                      <animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0.6;0.3;0.6"
+                                          begin="0.5s" />
+                                  </path>
+                              </g>
+          
+                              <!-- Connecting lines -->
+                              <g stroke="#d491ff" stroke-width="1" opacity="0.3">
+                                  <line x1="200" y1="100" x2="200" y2="300">
+                                      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.3;0.1;0.3" />
+                                  </line>
+                                  <line x1="100" y1="200" x2="300" y2="200">
+                                      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0.3;0.1;0.3"
+                                          begin="1s" />
+                                  </line>
+                              </g>
+                          </svg>
+                          <h3>Get in Touch</h3>
+                          <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="contact-container">
+                      <h2>Contact Us</h2>
+                      <form action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="0bd8f117-9d47-473c-81fe-4b117b2c5e8c">
+                          <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" id="name" name="name" placeholder="Enter your name">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" id="email" name="email" placeholder="Enter your email">
+                          </div>
+                          <div class="form-group">
+                              <label for="message">Message</label>
+                              <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                          </div>
+                          
+                          <button class="social-button" type="submit">Send Message</button>
+                      </form>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="loading-page float-circle">
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+      <defs>
+        <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#6B2FBE" />
+          <stop offset="100%" style="stop-color:#3B1B6B" />
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+          <feMerge>
+            <feMergeNode in="coloredBlur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- Deep shadow -->
+      <path class="deep-shadow-path"
+        d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+        stroke="rgba(107,47,190,0.1)" stroke-width="19" fill="none" />
+
+      <!-- Middle shadow -->
+      <path class="middle-shadow-path"
+        d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+        stroke="rgba(107,47,190,0.2)" stroke-width="15" fill="none" />
+
+      <!-- Main S path -->
+      <path class="main-path"
+        d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+        stroke="url(#purpleGradient)" stroke-width="8" fill="none" filter="url(#glow)" />
+
+      <!-- Shine effect -->
+      <path class="shine-path"
+        d="M82,35 C82,35 60,35 30,35 C15,35 10,45 10,55 C10,65 15,75 30,75 C30,75 70,75 70,75 C85,75 90,85 90,95 C90,105 85,115 70,115 C40,115 18,115 18,115"
+        stroke="#AB82FF" stroke-width="3" fill="none" />
+    </svg>
+
+    <div class="name-container">
+      <div class="logo-name">Hi,There</div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+  <script src="main.js"></script>
+  <!-- <script src="smooth-scroll.js"></script> -->
+</body>
+
+</html>
